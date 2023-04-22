@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="OpenFileDialog" type="FileDialog"]
+margin_right = 600.0
+margin_bottom = 400.0
+popup_exclusive = true
+window_title = "打开文件"
+mode = 0
+access = 2
+filters = PoolStringArray( "*.graphx" )
+current_dir = "/"
+current_path = "/"

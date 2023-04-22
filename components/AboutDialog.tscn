@@ -1,0 +1,29 @@
+[gd_scene format=2]
+
+[node name="AboutDialog" type="AcceptDialog"]
+margin_right = 48.0
+margin_bottom = 58.0
+window_title = "About"
+dialog_text = "Graphx
+v0.0.1-alpha
+Copyright (c) 2023, Adanelia
+https://github.com/Adanelia/Graphx
+
+This software uses Godot Engine
+Copyright (c) 2014-present Godot Engine contributors. 
+Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+https://godotengine.org/license
+
+SourceHanMono
+Copyright 2014-2019 Adobe (http://www.adobe.com/), with Reserved Font
+Name 'Source'. Source is a trademark of Adobe in the United States
+and/or other countries.
+This Font Software is licensed under the SIL Open Font License,
+Version 1.1.
+
+SourceHanSansCN
+Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font
+Name 'Source'. Source is a trademark of Adobe in the United States
+and/or other countries.
+This Font Software is licensed under the SIL Open Font License,
+Version 1.1."

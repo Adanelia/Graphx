@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="SubMenuExport" type="PopupMenu"]
+margin_right = 65.0
+margin_bottom = 38.0
+items = [ "Image", null, 0, false, false, 0, 0, null, "", false ]

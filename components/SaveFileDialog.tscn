@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://components/SaveFileDialog.gd" type="Script" id=1]
+
+[node name="SaveFileDialog" type="FileDialog"]
+margin_right = 600.0
+margin_bottom = 400.0
+popup_exclusive = true
+window_title = "保存文件"
+access = 2
+filters = PoolStringArray( "*.graphx" )
+current_dir = "/"
+current_path = "/"
+script = ExtResource( 1 )
+
+[connection signal="file_selected" from="." to="." method="_on_SaveFileDialog_file_selected"]
