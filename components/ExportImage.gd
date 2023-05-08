@@ -6,6 +6,7 @@ onready var texture_rect = $HSplitContainer/TextureRect
 onready var format_option_button = $HSplitContainer/VBoxContainer/FormatOptionButton
 onready var file_path_line_edit = $HSplitContainer/VBoxContainer/HBoxContainer/FilePathLineEdit
 onready var file_path_dialog = $FileDialog
+onready var alert_dialog = $AlertDialog
 
 
 # Called when the node enters the scene tree for the first time.
@@ -19,6 +20,11 @@ func _ready():
 
 
 func _on_ExportImage_confirmed():
+	# Check if file path set
+	if file_path_line_edit.text == "":
+		alert_dialog.popup()
+		return
+	
 	yield(VisualServer, "frame_post_draw")
 	var image = viewport.get_texture().get_data()
 	match format_option_button.selected:
@@ -29,6 +35,7 @@ func _on_ExportImage_confirmed():
 	
 	# Clean up
 	_on_ExportImage_canceled()
+	hide()
 
 
 func _on_ExportImage_canceled():
